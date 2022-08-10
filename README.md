@@ -7,3 +7,5 @@ The very next task was to install the lamp on the linux ubuntu and hosting a loc
 ## :arrow_right: *DAY 2 (17/07/2020)*
 
 Read about the frappe framework, its functionalities and advantage along with its installation process. Beside that looked over the lamp that was told to install earlier.
+##  :arrow_right: *DAY 3 (18/07/2022)*
+Today i go through the some steps of Library Management and implement in frameframework.
