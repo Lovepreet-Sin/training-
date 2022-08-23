@@ -9,3 +9,77 @@ The very next task was to install the lamp on the linux ubuntu and hosting a loc
 Read about the frappe framework, its functionalities and advantage along with its installation process. Beside that looked over the lamp that was told to install earlier.
 ##  :arrow_right: *DAY 3 (18/07/2022)*
 Today i go through the some steps of Library Management and implement in frameframework.
+## :arrow_right: *DAY 4 (19/07/2022)*
+Went on to the frappe framework offficial page and headed with the  installation process and kept on recovering the erros. 
+This activity took about 2 days.then we found another souces fro teh installation of the framework because theh version of the linux was not compactable with the official instructions. 
+The then used instructionn manual was(https://github.com/D-codE-Hub/Guide-to-Install-Frappe-ERPNext-in-Ubuntu-22.04-LTS) for the proper installation of the later.
+##  :arrow_right: *DAY 5/DAY 6 (20/07/2022 to 21/072022)*
+As the frappe was installed, the futher reading process about the usage of the framework was done. 
+The LIBERARY MANAGMENT SYSTEM was initialted and the doctypes were created, beside that the Markdown lanuage was also read and the cheatsheets were read to know about the different tags in the later language. 
+This took us 2 days.
+
+##  :arrow_right: *DAY 7 (22/07/2022)*
+Today i go through the some steps of Library Management and implement in frameframework.
+##  :arrow_right: *DAY 8 (23/07/2022)*
+Today i go through the library managements features like- Library Membership,Linked Doctypes,Controller validation for membership, Library Transaction, Library Settings and some features of form scripts.  
+##  :arrow_right: *DAY 9 (25/07/2022)*
+Today i am completing all the steps of Library Management System like- create a doctype, doctype features, controllers methods, types of doctype, form 
+scripts and so on.##  :arrow_right: *DAY 10 (26/07/2022)*
+Today i am completed the frappe Library Management and view the articles and articles list on web pages.
+## :arrow_right: *DAY 11 (27/07/2022)*
+Full review on library management system
+## :arrow_right: *DAY 12 (28/07/2022)*
+* Install Conda and create virtual environment
+* Install Python  -V 3.8.1
+* Install bench   -V 5.8.1
+* Install Frappe  -V 13.23.0
+* Install Erpnext -V 13
+## :arrow_right: *DAY 13 (30/07/2022)*
+Today seminar off because our Infosys SP & DSE Exam
+Prepare for Exam
+# :arrow_right: *DAY 14 (1/08/2022)*
+Reading Education Domain.
+### Setup :
+* Program
+* Course
+* Instructor
+* Room
+* Student Category
+* Acadmic Term
+* Acadmic year
+* Education Settings
+## :arrow_right: *DAY 15 (2/08/2022)*
+Implement education domain in test server (gne11.gndec.ac.in)
+### :arrow_right: *DAY 16 (03/08/2022)*
+Create a demo web page
+Now i am exploring the webpage documentation and its features
+### :arrow_right: *DAY 17 (04/08/2022)*
+Create a demo web page
+Now i am exploring the webpage documentation and its features
+### :arrow_right: DAY 18 (05/08/2022)
+Working on webpage
+use frontend tool of webpage
+### :arrow_right: *DAY 19 (06/08/2022)*
+Saturday seminar:<br/>
+understand the use of make command<br/>
+how we can write script of it
+### :arrow_right: DAY 20 (07/08/2022)
+Sunday
+### :arrow_right: DAY 21 (10/08/2022)
+### Tasks given by satinderpal sir
+Our Team Tasks :
+1. Student Admission
+2. Student Fees
+3.Generate Fee Slip
+4. Online Fee Option & Receipt
+5. Accounting
+6. HR Modules
+7. Sales Management
+8. Assets Management
+9. Student Leaving Certificate Option
+10. Lead Management
+11. Student Applicant
+### :arrow_right: *DAY 22 (11/08/2022)*
+Raksha Bandhan<br/>
+start accounting part of our task.First of all, i started learning about the charts of account.
+
