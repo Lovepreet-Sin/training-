@@ -24,7 +24,8 @@ Today i go through the some steps of Library Management and implement in framefr
 Today i go through the library managements features like- Library Membership,Linked Doctypes,Controller validation for membership, Library Transaction, Library Settings and some features of form scripts.  
 ##  :arrow_right: *DAY 9 (25/07/2022)*
 Today i am completing all the steps of Library Management System like- create a doctype, doctype features, controllers methods, types of doctype, form 
-scripts and so on.##  :arrow_right: *DAY 10 (26/07/2022)*
+scripts and so on.
+## :arrow_right: *DAY 10 (26/07/2022)*
 Today i am completed the frappe Library Management and view the articles and articles list on web pages.
 ## :arrow_right: *DAY 11 (27/07/2022)*
 Full review on library management system
@@ -82,4 +83,18 @@ Our Team Tasks :
 ### :arrow_right: *DAY 22 (11/08/2022)*
 Raksha Bandhan<br/>
 start accounting part of our task.First of all, i started learning about the charts of account.
+### :arrow_right: *DAY 23 (12/08/2022)*
+Today i have start adding a Program, Course and Topic and then start learning the admission process.
+### :arrow_right: *DAY 24 (13/08/2022)*
+Today i am starting the admission process. In this process, first of all i create a student applicant  and then enroll the student for the course and click on save and submit.
+### :arrow_right: *DAY 25 (15/08/2022)*
+Today i am start create a fees for each student. Then create payment entry and select mode of payment. After that click on save and submit.You can check the account dashboard for recieving the payment entry.We can also check the student fees collection report and program wise fees collection report.
+### :arrow_right: *DAY 26 (16/08/2022)*
+Now i am start adding student addmission webform on the website and adding a direct link on the website by using the website setting and then save it .
+
+
+
+
+
+
 
