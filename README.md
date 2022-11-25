@@ -232,7 +232,7 @@ In that day satinder asked me to import the student details in the https://gne5.
  
  ## :arrow_right: *DAY 40 (01/09/2022)*
  In that day i can help veepal to installion process of nodebb . And got so many errors while installing mongodb in his system and i can him to resolve it and finally we got the solution. 
-## :arrow_right: *DAY 39 (02/09/2022)*
+## :arrow_right: *DAY 41 (02/09/2022)*
 Now i am working again on the notice board and create a doctype on the erpnext and in this work @veerpal is also a part thst is told by the satinder sir.
 Then we will start working on it and we can create a doctype and also create a webform and webpage but did not work well so we can deleted it and again start the work.
  
