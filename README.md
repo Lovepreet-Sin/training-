@@ -235,10 +235,71 @@ In that day satinder asked me to import the student details in the https://gne5.
 ## :arrow_right: *DAY 41 (02/09/2022)*
 Now i am working again on the notice board and create a doctype on the erpnext and in this work @veerpal is also a part thst is told by the satinder sir.
 Then we will start working on it and we can create a doctype and also create a webform and webpage but did not work well so we can deleted it and again start the work.
+## :arrow_right: *DAY 42 (03/09/2022)*
+Today i have start learning about the mongodb that how to create database and how to create new collections in the database and how to add data in the collection and learn how to delete and how to export the data.First of all, we can understand  ---**what is mongodb?** <br/>
  
+*MongoDB is an open-source document database and leading NoSQL database. MongoDB is written in C++. This tutorial will give you great understanding on MongoDB concepts needed to create and deploy a highly scalable and performance-oriented database.*
+MongoDB is a cross-platform, document oriented database that provides, high performance, high availability, and easy scalability. MongoDB works on concept of collection and document. <br/>
+## What is Collections? <br/>
+Collection is a group of MongoDB documents. It is the equivalent of an RDBMS table. A collection exists within a single database. Collections do not enforce a schema. Documents within a collection can have different fields. Typically, all documents in a collection are of similar or related purpose.
+## What is database? <br/>
+Database is a physical container for collections. Each database gets its own set of files on the file system. A single MongoDB server typically has multiple databases.
+## What is Document? <br/>
+A document is a set of key-value pairs. Documents have dynamic schema. Dynamic schema means that documents in the same collection do not need to have the same set of fields or structure, and common fields in a collection's documents may hold different types of data. <br/>
+ The following table shows the relationship of RDBMS terminology with MongoDB: <br/>
+ | RDBMS | MongoDB |
+| ----------- | ----------- |
+| Database | Database |
+| Table | Collections | 
+| Tuple/Row | Document |
+| Column | Fields |
+| Table Join | Embedded Document |
+| Primary Key | Primary Key (Default key _id provided by MongoDB itself) | 
+ ## :arrow_right: *DAY 43 (05/09/2022)*
+ Today i can understand how to create a database.To create a database we can write `use DATABASE_NAME` . 
+ ## (The use Command) : 
+ MongoDB use DATABASE_NAME is used to create database. The command will create a new database if it doesn't exist, otherwise it will return the existing database. <br/>
+ Example: <br/>
+ ```
+>use mydb
+switched to db mydb
+ ```
+To check your currently selected database, use the command db: <br/>
+ ```
+ >db
+mydb
+ ```
+If you want to check your databases list, use the command: <br/>
+ `>show dbs`
+## The createCollection() Method
+And i can also understand how to create a collection. We can add collection by using the following command: <br/>
+ ```
+ db.createCollection(collection_name)
+```
+ Example: <br/>
+```
+ >use test
+switched to db test
+>db.createCollection("mycollection")
+{ "ok" : 1 }
+>
+ ```
+You can check the created collection by using the command show collections. <br/>
+ ```
+ >show collections
+ ```
+ ## The insert() Method
+ To insert data into MongoDB collection, you need to use MongoDB's insert() or save() method. We can use the following command: <br/>
+ ```
+ >db.COLLECTION_NAME.insert(document)
+```
+ ## The drop() Method
+ MongoDB's db.collection.drop() is used to drop a collection from the database.<br/>
+ ```
+ db.COLLECTION_NAME.drop()
+ ```
  
- 
- 
+
 
 
 
