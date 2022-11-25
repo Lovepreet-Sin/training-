@@ -51,22 +51,22 @@ Reading Education Domain.
 * Education Settings
 ## :arrow_right: *DAY 15 (2/08/2022)*
 Implement education domain in test server (gne11.gndec.ac.in)
-### :arrow_right: *DAY 16 (03/08/2022)*
+## :arrow_right: *DAY 16 (03/08/2022)*
 Create a demo web page
 Now i am exploring the webpage documentation and its features
-### :arrow_right: *DAY 17 (04/08/2022)*
+## :arrow_right: *DAY 17 (04/08/2022)*
 Create a demo web page
 Now i am exploring the webpage documentation and its features
-### :arrow_right: DAY 18 (05/08/2022)
+## :arrow_right: DAY 18 (05/08/2022)
 Working on webpage
 use frontend tool of webpage
-### :arrow_right: *DAY 19 (06/08/2022)*
+## :arrow_right: *DAY 19 (06/08/2022)*
 Saturday seminar:<br/>
 understand the use of make command<br/>
 how we can write script of it
-### :arrow_right: DAY 20 (07/08/2022)
+## :arrow_right: DAY 20 (07/08/2022)
 Sunday
-### :arrow_right: DAY 21 (10/08/2022)
+## :arrow_right: DAY 21 (10/08/2022)
 ### Tasks given by satinderpal sir
 Our Team Tasks :
 1. Student Admission
@@ -80,17 +80,35 @@ Our Team Tasks :
 9. Student Leaving Certificate Option
 10. Lead Management
 11. Student Applicant
-### :arrow_right: *DAY 22 (11/08/2022)*
+## :arrow_right: *DAY 22 (11/08/2022)*
 Raksha Bandhan<br/>
 start accounting part of our task.First of all, i started learning about the charts of account.
-### :arrow_right: *DAY 23 (12/08/2022)*
+## :arrow_right: *DAY 23 (12/08/2022)*
 Today i have start adding a Program, Course and Topic and then start learning the admission process.
-### :arrow_right: *DAY 24 (13/08/2022)*
+## :arrow_right: *DAY 24 (13/08/2022)*
 Today i am starting the admission process. In this process, first of all i create a student applicant  and then enroll the student for the course and click on save and submit.
-### :arrow_right: *DAY 25 (15/08/2022)*
+## :arrow_right: *DAY 25 (15/08/2022)*
 Today i am start create a fees for each student. Then create payment entry and select mode of payment. After that click on save and submit.You can check the account dashboard for recieving the payment entry.We can also check the student fees collection report and program wise fees collection report.
-### :arrow_right: *DAY 26 (16/08/2022)*
+## :arrow_right: *DAY 26 (16/08/2022)*
 Now i am start adding student addmission webform on the website and adding a direct link on the website by using the website setting and then save it .
+## :arrow_right: *DAY 27 (17/08/2022)*
+Now my next task is noticeboard given by H.S. Rai sir. First of all, i was create a webpage and named as notieboard and add notice by using web templates and show this webpage in website.
+## :arrow_right: *DAY 28 (18/08/2022)*
+Today i am start learning about the nodebb and understand what is nodebb .
+NodeBB is a next-generation discussion platform that utilizes web sockets for instant interactions and real-time notifi-
+cations. NodeBB forums have many modern features out of the box such as social network integration and streaming discussions.NodeBB is an open source project which can be forked on GitHub. If there are any discrepancies in the documentation please feel free to submit a pull request (via the “Edit on GitHub” button on the top right) or raise an issue on our issue tracker.
+## :arrow_right: *DAY 29 (19/08/2022)*
+Now i am start installing nodebb process. First of all i was install node.js .Naturally, NodeBB is driven by Node.js, and so it needs to be installed. Node.js is a rapidly evolving platform and so installation of the current LTS version of Node.js is recommended to make future updates seemless. The Node.js LTS Plan details the LTS release schedule including projected end-of-life. <br/>
+Node.js is available from the NodeSource Ubuntu binary distributions repository. <br/>
+I am running the following command in my terminal .
+`curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs` <br/>
+I am getting some errors while installing node.js then i had resolved it. This error take some time and i was search on google and then find out the solution.
+## :arrow_right: *DAY 30 (20/08/2022)*
+Now i am successfully installed node.js in my system and then verify installation of Node.js and npm. You should have version lts of Node.js installed, and version 8 of npm installed. I was check it by using the following command in terminal: <br/>
+`node -v` <br/>
+`npm -v`  <br/>
+
 
 
 
