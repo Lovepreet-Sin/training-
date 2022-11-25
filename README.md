@@ -104,13 +104,119 @@ I am running the following command in my terminal .
 `curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs` <br/>
 I am getting some errors while installing node.js then i had resolved it. This error take some time and i was search on google and then find out the solution.
-## :arrow_right: *DAY 30 (20/08/2022)*
+## :arrow_right: *DAY 30 (21/08/2022)*
 Now i am successfully installed node.js in my system and then verify installation of Node.js and npm. You should have version lts of Node.js installed, and version 8 of npm installed. I was check it by using the following command in terminal: <br/>
 `node -v` <br/>
 `npm -v`  <br/>
+And then the next step is the database of the nodebb. I am select mongodb as a database and learn about the database and start installion mongodb in my system. MongoDB is the default database for NodeBB. The following is an abbreviation of the official MongoDB installation guide for Ubuntu: <br/>
+`wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -` <br/>
+`echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list` <br/>
+`sudo apt-get update`<br/>
+`sudo apt-get install -y mongodb-org` <br/>
+And then suddenly i am getting an error while run this command `sudo apt-get install -y mongodb-org`. Then i was going to browser and start finding out solution. I was search so many times but it cannot solve. It takes so much time to resolve it. Finally i was found the solution and verify installation of MongoDB. I was check the installing of mongodb in my system by running the following command in my terminal: <br/>
+`mongod --version` <br/> 
+Then it was showing the following output: <br/>
+```
+db version v5.0.14
+Build Info: {
+    "version": "5.0.14",
+    "gitVersion": "1b3b0073a0b436a8a502b612f24fb2bd572772e5",
+    "openSSLVersion": "OpenSSL 1.1.1f  31 Mar 2020",
+    "modules": [],
+    "allocator": "tcmalloc",
+    "environment": {
+        "distmod": "ubuntu2004",
+        "distarch": "x86_64",
+        "target_arch": "x86_64"
+    }
+}
+```
+## :arrow_right: *DAY 31 (22/08/2022)*
+Now i am start the mongod service and verify service status.I was start mongod service by run the following command in my terminal: <br/>
+`sudo systemctl start mongod` <br/>
+And i was check the mongod service the run the following command : <br/>
+`sudo systemctl status mongod` <br/>
+Then i have to configure the mongodb . General MongoDB administration is done through the MongoDB Shell `mongo`.A default installation of MongoDB listens on port 27017 and is accessible locally. Access the shell br write the `mongo` on the terminal.Now i am add admin as a database.Switch to the built-in admin database by wrting` > use admin` in mongo shell. Create an administrative user (the is different from the nodebb user we'll create later). Replace the placeholder <Enter a secure password> with your own selected password. Be sure that the < and > are also not left behind. <br/>
+` > db.createUser( { user: "admin", pwd: "<Enter a secure password>", roles: [ { role: "root", db: "admin" } ] } ) ` <br/>
+ This user is scoped to the admin database to manage MongoDB once authorization has been enabled. To initially create a database that doesn't exist simply use it. Add a new database called nodebb: <br/>
+`> use nodebb` <br/>
+ The database will be created and context switched to nodebb. Next create the nodebb user with the appropriate privileges: <br/>
+ `> db.createUser( { user: "nodebb", pwd: "<Enter a secure password>", roles: [ { role: "readWrite", db: "nodebb" }, { role: "clusterMonitor", db: "admin" } ] } ) ` <br/>
+The readWrite permission allows NodeBB to store and retrieve data from the nodebb database. The clusterMonitor permission provides NodeBB read-only access to query database server statistics which are then exposed in the NodeBB Administrative Control Panel (ACP). <br/>
+Exit the Mongo Shell: <br/>
+`> quit() ` <br/>
+ Enable database authorization in the MongoDB configuration file `/etc/mongod.conf` by appending the following lines: <br/>
+ `security:
+  authorization: enabled` <br/>
+ Then Restart MongoDB and verify the administrative user created earlier can connect: <br/>
+ `sudo systemctl restart mongod
+mongo -u admin -p your_password --authenticationDatabase=admin
+` <br/>
+## :arrow_right: *DAY 32 (23/08/2022)*
+ Now i am start installing nodebb in my system. First of all, i am install git as it is used to distribute NodeBB. To install git , i had run the following command in my terminal: <br/>
+`sudo apt-get install -y git ` <br/>
+# Note: <br/>
+commands like git and ./nodebb should not be used with root access (sudo or elevated privileges). It will cause problems with different ownership of files NodeBB needs access to. <br/>
+Then the next step is to clone NodeBB into an appropriate location. Here the local nodebb directory is used. To install nodebb in my terminal, i was run the following command: <br/>
+`git clone -b v2.x https://github.com/NodeBB/NodeBB.git nodebb` <br/>
+ After installion of nodebb , then i has to enter into nodebb directory. We can enter into nodebb directory by run the following command: <br/>
+ `cd nodebb` <br/>
+ This clones the NodeBB repository from the v2.x branch to the nodebb directory. A list of alternative branches are available in the NodeBB Branches GitHub page, but only the versioned branches are stable.NodeBB ships with a command line utility which allows for several functions. We'll first use it to setup NodeBB. This will install modules from npm and then enter the setup utilty. To setup nodebb i was run the following command in my teminal: <br/>
+`./nodebb setup` <br/>
+ A series of questions will be prompted with defaults in parentheses. The default settings are for a local server listening on the default port 4567 with a MongoDB instance listening on port 27017. When prompted for the mongodb username and password, enter nodebb, and the password that you configured earlier. Once connectivity to the database is confirmed the setup will prompt that initial user setup is running. Since this is a fresh NodeBB install a forum administrator must be configured. Enter the desired administrator information. This will culminate in a NodeBB Setup Completed message. <br/>
+A configuration file config.json will be created in the root of the nodebb directory. This file can be modified should you need to make changes such as changing the database location or credentials used to access the database. <br/>
+Finally, you can use the cli utility to start NodeBB: <br/>
+`./nodebb start` <br/>
+## :arrow_right: *DAY 33 (24/08/2022)*
+Today i am start installing nginx in my system.  In order to allow NodeBB to be served without a port, nginx can be set up to proxy all requests to a particular hostname (or subdomain) to an upstream NodeBB server running on any port. To install nginx, i have to run the following command in my terminal: 
+`sudo apt-get install -y nginx ` <br/>
+ Then i had Verify the installation of nginx in my system. To verify the installion of nginx i will run the following command in my terminal: <br/>
+ `nginx -v` <br/>
+ And then i will start the nginx service by run the following command in my terminal: <br/>
+ `sudo systemctl start nginx` <br/>
+ To check the status of nginx i have to run the following command in my terminal: <br/>
+ `sudo systemctl status nginx`<br/>
+ Then the next step is to configure nginx file.The following demonstrates a typical series of commands when creating a new nginx config: <br/>
+ ```
+ cd /etc/nginx/sites-available
+sudo nano forum.example.com # config entered into file and saved
+cd ../sites-enabled
+sudo ln -s ../sites-available/forum.example.com
+```
+Below is an example configuration for NodeBB running on port 4567. <br/>
+ ```
+ server {
+    listen 80;
+
+    server_name forum.example.com;
+
+    location / {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-NginX-Proxy true;
+
+        proxy_pass http://127.0.0.1:4567;
+        proxy_redirect off;
+
+        # Socket.IO Support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+```
+After making changes to nginx configs, you have to reload the service for changes to take effect. To reload the nginx service i can run the following command in my terminal: <br/>
+ `sudo systemctl reload nginx ` <br/>
+Great, you have NodeBB installed and running. You should be able to access http://forum.example.com and interact with your forum.
 
 
+ 
 
+ 
+ 
+ 
 
 
 
