@@ -210,10 +210,30 @@ Below is an example configuration for NodeBB running on port 4567. <br/>
 After making changes to nginx configs, you have to reload the service for changes to take effect. To reload the nginx service i can run the following command in my terminal: <br/>
  `sudo systemctl reload nginx ` <br/>
 Great, you have NodeBB installed and running. You should be able to access http://forum.example.com and interact with your forum.
-
-
+## :arrow_right: *DAY 34 (25/08/2022)*
+ After installing the nodebb full process i can start nodebb in my browser and i can understand how to register a new user and how to make changes in the dashboard and lots of things. Yoy can also upload your profile picture by click on profile button and then go to edit profile and click on change picture then a page will open and we can select a picture according to our choice and then save it and the you can see that the picture is uploaded successfully.
+In this day i can check all the dashboard od nodebb and understand the whole process how to use nodebb.
+## :arrow_right: *DAY 35 (26/08/2022)*
+Today i am install a plugin in nodebb dashboard and the name of the plugin is DB search . So that we can fetch all the database in backend in my terminal.
+After install the db search plugin , i am click on the activate button and then we need to restart and rebuild the nodebb. After that we can also see all the entries in the terminal that you have added in the frontend. To see the entries you have added in the nodebb , first of all inter into mongo shell .To enter into mongo shell we can also write the username and the password. <br/>
+`mongo -u (username) -p (pasword)` <br/>
+ And then you can enter into the shell and to see how many database in your mongodb shell you have to write `show dbs;` in the mongo shell and now you will see all the database. To enter into any database you can write `use (database_name)` and suddenly you have to enter into a datbase as your choice. <br/>
+ To see the collections in the database , you have to write `show collections;` and then enter . You can see all the collections in the database. <br/>
+ To enter into the collection you can write `db.collection_name.find()` and then enter , now we can see all the collections in the database.
+## :arrow_right: *DAY 36 (27/08/2022)*
+In that day satinder asked me to import the student details in the https://gne5.gndec.ac.in site . Sir asked me to take the data from @komalpreet and upload on the site that i have told. Then the konalpreet provide me tyhe data and i can start import the data in the https://gne5.gndec.ac.in  site . There are so many mistakes in the data that is provided by komalpreet to me . So i can resolve the mistakes and it takes so much time to resolve it.
+## :arrow_right: *DAY 37 (29/08/2022)*
+ Now i will resolve the errors that is in the data and then i can upload it on https://gne5.gndec.ac.in site and it takes 2 hours because the speed of the internet is very slow.
+ ## :arrow_right: *DAY 38 (30/08/2022)*
+ In that day @hsrai sir told me how to take backup of the database of the entries thaat we will add on the nodebb from the frontend . And then i can start working on it. Then i can search on internet and find the command. And sir has also told me to take backup as a CSV file and said to OK to sir and i again start working on it. And i can finally did it. We can backup the data as a CSV file by run the following command in the terminal: <br/>
+ ` mongoexport --username (user_name) --password (your_password) --db (database_name) --collection=(collection_name) --db=(database_name) --type=csv --fields=(fiels_name) --out=File_name.csv` <br/>
+  ## :arrow_right: *DAY 39 (31/08/2022)*
+ In that day i cannot work because i had  fever .So, i  cannot work.
  
-
+ ## :arrow_right: *DAY 40 (01/09/2022)*
+ In that day i can help veepal to installion process of nodebb . And got so many errors while installing mongodb in his system and i can him to resolve it and finally we got the solution. 
+## :arrow_right: *DAY 39 (02/09/2022)*
+Now  
  
  
  
